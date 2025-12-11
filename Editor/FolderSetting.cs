@@ -1,11 +1,11 @@
 using System.Collections.Generic;
-using Sirenix.OdinInspector;
+using TriInspector;
 using UnityEditor;
 using UnityEngine;
 
 namespace AssetFlow
 {
-    public class FolderSetting : SerializedScriptableObject
+    public class FolderSetting : ScriptableObject
     {
         /// <summary>
         /// FolderSetting 文件名
@@ -16,10 +16,10 @@ namespace AssetFlow
         public bool includeSubfolders = false;
         public List<string> ExcludeAssetPaths = new();
 
-        [InlineEditor, TabGroup("Importer")]
+        [InlineEditor, Tab("Importer")]  
         public AssetImporter Importer = new();
 
-        [TabGroup("Validator")]
+        [Tab("Validator")]
         public List<AssetValidatorBase> Validators = new();
     }
 }
