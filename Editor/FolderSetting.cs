@@ -3,7 +3,7 @@ using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
-namespace Editor.AssetFlow
+namespace AssetFlow
 {
     public class FolderSetting : SerializedScriptableObject
     {

@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEditor.Experimental;
 using UnityEngine;
 
-namespace Editor.AssetFlow
+namespace AssetFlow
 {
     /// <summary>
     /// 自动应用 AssetFlow 的资源修改处理器

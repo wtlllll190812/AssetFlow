@@ -3,10 +3,10 @@
   "displayName": "AssetFlow",
   "description": "A simple asset import workflow plugin for Unity",
   "version": "0.1.0",
-  "unity": "2020.3",
-  "author": "wtllll (https://github.com/wtlllll190812)",
-  "homepage": "https://github.com/wtlllll190812/AssetFlow#readme",
-  "dependencies": {
-    "com.codewriter.triinspector-package": "https://github.com/codewriter-packages/Tri-Inspector.git"
-  }
+  "unity": "2022.3",
+  "author": {
+    "name": "wtllll",
+    "url": "https://github.com/wtlllll190812"
+  },
+  "homepage": "https://github.com/wtlllll190812/AssetFlow#readme"
 }

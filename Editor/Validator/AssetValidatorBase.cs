@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Editor.AssetFlow
+namespace AssetFlow
 {
     public abstract class AssetValidatorBase
     {

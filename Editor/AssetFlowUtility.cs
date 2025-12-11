@@ -6,7 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Editor.AssetFlow
+namespace AssetFlow
 {
     /// <summary>
     /// 导入器模板工具类

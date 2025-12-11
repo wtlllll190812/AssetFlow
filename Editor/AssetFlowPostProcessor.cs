@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Editor.AssetFlow
+namespace AssetFlow
 {
     /// <summary>
     /// 自动应用 AssetFlow 的资源导入后处理器

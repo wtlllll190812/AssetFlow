@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace Editor.AssetFlow
+namespace AssetFlow
 {
     /// <summary>
     /// 资源导入器的统一管理编辑器
