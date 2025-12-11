@@ -5,7 +5,7 @@ using Object = UnityEngine.Object;
 namespace AssetFlow
 {
     [Serializable]
-    public class NameValidatorBase : AssetValidatorBase
+    public class FileNameValidator : AssetValidatorBase
     {
         [SerializeField]
         public string pattern;
