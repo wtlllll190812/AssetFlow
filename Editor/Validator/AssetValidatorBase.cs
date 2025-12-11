@@ -1,7 +1,9 @@
-﻿using UnityEngine;
+﻿using System;
+using Object = UnityEngine.Object;
 
 namespace AssetFlow
 {
+    [Serializable]
     public abstract class AssetValidatorBase
     {
         public abstract bool IsValid(Object asset, out string errorMessage);

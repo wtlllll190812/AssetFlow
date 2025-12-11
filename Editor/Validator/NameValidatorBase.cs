@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace AssetFlow
 {
+    [Serializable]
     public class NameValidatorBase : AssetValidatorBase
     {
         [SerializeField]
@@ -22,13 +25,9 @@ namespace AssetFlow
                 return false;
             }
 
-            if (!System.Text.RegularExpressions.Regex.IsMatch(asset.name, pattern))
-            {
-                errorMessage = $"资源名称 \"{asset.name}\" 不符合正则表达式: {pattern}";
-                return false;
-            }
-
-            return true;
+            if (System.Text.RegularExpressions.Regex.IsMatch(asset.name, pattern)) return true;
+            errorMessage = $"资源名称 \"{asset.name}\" 不符合正则表达式: {pattern}";
+            return false;
         }
     }
 }

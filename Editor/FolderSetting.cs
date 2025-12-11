@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace AssetFlow
 {
+    [DeclareTabGroup("tabs")]
     public class FolderSetting : ScriptableObject
     {
         /// <summary>
@@ -16,10 +17,10 @@ namespace AssetFlow
         public bool includeSubfolders = false;
         public List<string> ExcludeAssetPaths = new();
 
-        [InlineEditor, Tab("Importer")]  
+        [InlineEditor,Group("tabs"), Tab("Importer")]  
         public AssetImporter Importer = new();
 
-        [Tab("Validator")]
+        [Group("tabs"), Tab("Validator")]
         public List<AssetValidatorBase> Validators = new();
     }
 }
