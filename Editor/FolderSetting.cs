@@ -1,26 +1,22 @@
 using System.Collections.Generic;
-using TriInspector;
+using Sirenix.OdinInspector;
 using UnityEditor;
 using UnityEngine;
 
 namespace AssetFlow
 {
-    [DeclareTabGroup("tabs")]
-    public class FolderSetting : ScriptableObject
+    public class FolderSetting : SerializedScriptableObject
     {
         /// <summary>
         /// FolderSetting 文件名
         /// </summary>
         public const string FolderSettingFileName = "__FolderSetting__.asset";
 
-        [SerializeField, Tooltip("是否作用于子文件夹")]
-        public bool includeSubfolders = false;
+        [SerializeField, Tooltip("是否作用于子文件夹")] public bool includeSubfolders = false;
         public List<string> ExcludeAssetPaths = new();
 
-        [InlineEditor,Group("tabs"), Tab("Importer")]  
-        public AssetImporter Importer = new();
+        [InlineEditor, TabGroup("Importer")] public AssetImporter Importer = new();
 
-        [Group("tabs"), Tab("Validator")]
-        public List<AssetValidatorBase> Validators = new();
+        [TabGroup("Validator")] public List<AssetValidatorBase> Validators = new();
     }
 }
